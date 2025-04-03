@@ -1,0 +1,61 @@
+/* Estilo para la sección de inicio */
+#inicio {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 40px auto;
+    animation: slideIn 1s ease-out;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo del texto */
+#inicio h1 {
+    font-size: 36px;
+    color: #1e3c72;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Animación de brillo para el título */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+    }
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 0.5s forwards;
+}
+
+/* Animación de entrada del párrafo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

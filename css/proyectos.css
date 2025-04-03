@@ -1,0 +1,124 @@
+/* Estilo para la sección de proyectos */
+#proyectos {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo del título principal */
+#proyectos h1 {
+    font-size: 36px;
+    color: #1e3c72;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Títulos de cada proyecto */
+#proyectos .project-title {
+    font-size: 24px;
+    color: #2a5298;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo de los proyectos */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del proyecto */
+.project img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Descripción de los proyectos */
+.project p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Enlace de cada proyecto */
+.project a {
+    text-decoration: none;
+    background-color: #2a5298;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #ffcc00;
+    color: #2a5298;
+}
+
+/* Styling for links with 'subtle-link' class */
+.subtle-link {
+    background-color: transparent !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    color: #6a5acd !important;  
+    font-weight: 400 !important;  
+    position: relative !important;  
+    transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Subtle hover effect: color shift */
+.subtle-link:hover {
+    color: #483d8b !important; 
+    transform: scale(1.05);  
+}
+
+/* Adding a smooth underline animation */
+.subtle-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+/* On hover, the underline will expand */
+.subtle-link:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+/* Estilo para la sección de currículum */
+#curriculum {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+    animation: slideIn 1s ease-out;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo del título principal */
+#curriculum h1 {
+    font-size: 36px;
+    color: #1e3c72;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Títulos de sección */
+#curriculum .section-title {
+    font-size: 24px;
+    color: #2a5298;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* Estilo de los párrafos */
+#curriculum p, #curriculum ul {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Enlaces */
+#curriculum a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#curriculum a:hover {
+    color: #ffcc00;
+}
+
+/* Enlaces de redes sociales y descarga */
+#curriculum .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#curriculum .social-links a {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+/* Estilo para los enlaces de descarga */
+#curriculum .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #2a5298;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#curriculum .download-link:hover {
+    background-color: #ffcc00;
+    color: #2a5298;
+}
